@@ -1,0 +1,11 @@
+apply plugin: "com.liferay.portal.tools.service.builder"
+
+buildService {
+	apiDir = "../h7g5-api/src/main/java"
+	testDir = "../h7g5-test/src/testIntegration/java"
+}
+
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api", version: "2025.q1.2"
+	compileOnly project(":h7g5-api")
+}

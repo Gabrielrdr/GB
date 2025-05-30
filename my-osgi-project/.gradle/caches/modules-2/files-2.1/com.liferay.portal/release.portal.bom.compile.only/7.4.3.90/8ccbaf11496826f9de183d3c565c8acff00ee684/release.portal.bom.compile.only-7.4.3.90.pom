@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.liferay.portal</groupId>
+  <artifactId>release.portal.bom.compile.only</artifactId>
+  <version>7.4.3.90</version>
+  <packaging>pom</packaging>
+  <licenses>
+    <license>
+      <name>LGPL 2.1</name>
+      <url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Brian Wing Shun Chan</name>
+      <organization>Liferay, Inc.</organization>
+      <organizationUrl>http://www.liferay.com</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git@github.com:liferay/liferay-portal.git</connection>
+    <developerConnection>scm:git:git@github.com:liferay/liferay-portal.git</developerConnection>
+    <tag>f09ae81f17d7d5d2495ca8d68061d50be6457c78</tag>
+    <url>https://github.com/liferay/liferay-portal</url>
+  </scm>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.service.component.annotations</artifactId>
+        <version>1.3.0</version>
+      </dependency>
+      <dependency>
+        <groupId>jstl</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.service.jaxrs</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.core</artifactId>
+        <version>6.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>javax.ws.rs-api</artifactId>
+        <version>2.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>osgi.cmpn</artifactId>
+        <version>6.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.liferay.portal</groupId>
+        <artifactId>release.portal.api</artifactId>
+        <version>7.4.3.90-ga90</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <repositories>
+    <repository>
+      <id>liferay-public-releases</id>
+      <name>Liferay Public Releases</name>
+      <url>https://repository-cdn.liferay.com/nexus/content/repositories/liferay-public-releases/</url>
+    </repository>
+  </repositories>
+</project>

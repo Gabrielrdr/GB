@@ -1,0 +1,5 @@
+dependencies {
+	compileInclude group: "org.apache.commons", name: "commons-math3", version: "3.6.1"
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+	compileOnly project(":basic-training-able-api")
+}

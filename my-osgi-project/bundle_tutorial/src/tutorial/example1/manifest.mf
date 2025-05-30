@@ -1,0 +1,6 @@
+Bundle-Name: Exemplo de Ouvinte de Serviço
+Bundle-Description: Um bundle que escuta eventos de serviço
+Bundle-Vendor: Apache Felix
+Bundle-Version: 1.0.0
+Bundle-Activator: tutorial.example1.Activator
+Import-Package: org.osgi.framework

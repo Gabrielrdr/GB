@@ -1,0 +1,44 @@
+-add-resource=/home/me/my-osgi-project/basic-training-able-impl/build/tmp/compileJSP,/home/me/my-osgi-project/basic-training-able-impl/build/jspc
+Bundle-Name=Liferay Basic Training Able Implementation
+libsDirName=libs
+Javac-Debug=on
+-plugin.liferay=com.liferay.ant.bnd.resource.AddResourceVerifierPlugin,com.liferay.ant.bnd.jsp.JspAnalyzerPlugin,com.liferay.ant.bnd.metatype.MetatypePlugin,com.liferay.ant.bnd.npm.NpmAnalyzerPlugin,com.liferay.ant.bnd.resource.bundle.ResourceBundleLoaderAnalyzerPlugin,com.liferay.ant.bnd.sass.SassAnalyzerPlugin,com.liferay.ant.bnd.service.ServiceAnalyzerPlugin,com.liferay.ant.bnd.social.SocialAnalyzerPlugin,aQute.lib.spring.SpringComponent,com.liferay.ant.bnd.spring.SpringDependencyAnalyzerPlugin,com.liferay.ant.bnd.enterprise.EnterpriseAnalyzerPlugin
+docsDirName=docs
+environmentFileDir=.
+-contract=*
+-metatype=*
+testReportDirName=tests
+Javac-Deprecation=off
+name=basic-training-able-impl
+description=Liferay Basic Training Able Implementation
+liferay.workspace.product=portal-7.4-ga90
+distsDirName=distributions
+-fixupmessages.deprecated=annotations are deprecated
+group=my-osgi-project
+archivesBaseName=com.liferay.basic.training.able.impl
+-donotcopy=(.*.wsdd)
+-plugin.metatype=com.liferay.ant.bnd.metatype.MetatypePlugin
+-fixupmessages.unicode.string=Invalid unicode string
+-jsp=*.jsp,*.jspf,*.jspx
+Bundle-SymbolicName=com.liferay.basic.training.able.impl
+propertiesPluginGradleUserNameProperty=gradleUserName
+status=integration
+displayName=project '\:basic-training-able-impl'
+buildTreePath=\:basic-training-able-impl
+-consumer-policy=${replacestring;${range;[\=\=,\=\=]};.*,(.*)];$1}
+testResultsDirName=test-results
+-includeresource.compileInclude=lib/\=/home/me/my-osgi-project/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.6.1/e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf/commons-math3-3.6.1.jar;lib\:\=true
+-removeheaders=Bnd-LastModified
+path=\:basic-training-able-impl
+-noclassforname=true
+Bundle-Version=1.0.0
+-liferay-service-xml=service.xml,*/service.xml
+version=1.0.0
+-fixupmessages.classpath.empty=Classpath is empty
+-cdiannotations=
+-sass=*
+propertiesPluginEnvironmentNameProperty=environmentName
+environmentName=local
+Javac-Encoding=UTF-8
+-provider-policy=${replacestring;${range;[\=\=,\=\=]};.*,(.*)];$1}
+propertiesPluginEnvironmentFileDirProperty=environmentFileDir

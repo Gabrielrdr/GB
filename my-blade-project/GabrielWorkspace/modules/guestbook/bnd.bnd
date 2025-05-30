@@ -1,0 +1,7 @@
+Bundle-Name: guestbook
+Bundle-SymbolicName: com.acme.z3x1.portlet
+Bundle-Version: 1.0.0
+Export-Package: com.acme.z3x1.portlet.constants
+Provide-Capability:\
+	liferay.language.resources;\
+		resource.bundle.base.name="content.Language"

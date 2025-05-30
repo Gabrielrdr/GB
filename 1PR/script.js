@@ -7,20 +7,21 @@ async function getAllData() {
         method: "GET",
         headers: {
         "Content-Type": "application/json",
-        Authorization:  'Basic ' + btoa('test@liferay.com:learn')
+        Authorization: 'Basic ' + btoa('test@liferay.com:learn')
         } 
       });
       if (!response.ok) {
         throw new Error(`Response status: ${response.status}`)
       }
       const data = await response.json();
-      console.log("Data received", data)
+      console.log("Data received", data);
     } catch (error) {
       console.error(error.message);
     }
   }
 
 let id;
+
   //POST
 async function postData() {
     fetch("http://localhost:8080/o/headless-delivery/v1.0/sites/20117/blog-postings", {
@@ -45,35 +46,52 @@ async function postData() {
         }) 
         .then(data => {console.log("Post sucessfuly created", data);
         id = data.id;
-        getSingleData(id);
+        localStorage.setItem("postId", id);
         })
         .catch(err => console.error("Erro:", err.message))
 }
 //GETSINGLE
 
-async function getSingleData(id) {
-    console.log("ID recebido:", id)
+async function getSingleData() {
+  
+    const url = `http://localhost:8080/o/headless-delivery/v1.0/blog-postings/${id}`
 
     try {
-        const res = await fetch(`http://localhost:8080/o/headless-delivery/v1.0/blog-postings/${id}`, {
+        const res = await fetch(url, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
                 Authorization: 'Basic ' + btoa('test@liferay.com:learn')
             }
-    });
+        });
         if (!res.ok) {
-            const texto = await res.text();
-            throw new Error(`Erro ${res.status}: ${texto}`);
+            throw new Error(`Response status: ${res.status}`)
         }
-
         const data = await res.json();
-    } catch (err) {
-        console.error("Erro:", err.menssage)
+        console.log("Data received", data)
+    } catch (error) {
+        console.error(err.mensage)
     }
 }
 
 //DELETE
-async function deletePost(id) {
-    fetch()
-}
+async function delPost() {
+
+    const url = `http://localhost:8080/o/headless-delivery/v1.0/blog-postings/${id}`
+      
+    try {
+      const response = await fetch(url, {
+        method: "DELETE",
+        headers: {
+        "Content-Type": "application/json",
+        Authorization: 'Basic ' + btoa('test@liferay.com:learn')
+        } 
+      });
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`)
+      }
+      console.log("Deleted successfuly")
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
