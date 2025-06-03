@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/FlappyBird" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/titao-guerreiro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/liferay-course-building-enterprise-websites" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/my-react-app" vcs="Git" />
+  </component>
+</project>
